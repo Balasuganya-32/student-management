@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+        <form id="studentForm">
+            <div class="form-group">
+                <label>Student Name</label>
+                <input type="text" id="name" placeholder="Enter student name" />
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter email" />
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter phone number" />
+            </div>
+
+            <div class="form-group">
+                <label>Course</label>
+                <select id="course">
+                    <option value="">Select course</option>
+                    <option>HTML & CSS</option>
+                    <option>JavaScript</option>
+                    <option>React</option>
+                    <option>Python</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <button type="button" onclick="addStudent()">Add Student</button>
+            </div>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Course</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable">
+                <!-- JS will add rows here -->
+            </tbody>
+        </table>
+
+    </div>
+    <script src="script.js"></script>
+</body>
